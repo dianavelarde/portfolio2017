@@ -8,11 +8,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="http://www.theducates.com/Codepen3/normalize.min.css">
-        <link rel="stylesheet" href="http://www.theducates.com/Codepen3/fonts/ss-social-circle.css">
-        <link rel="stylesheet" href="http://www.theducates.com/Codepen3/fonts/ss-symbolicons-block.css">
-        <link rel="stylesheet" href="http://www.theducates.com/Codepen3/main.css">
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css">
 
         <script src="http://www.theducates.com/Codepen3/modernizr-2.6.2-respond-1.1.0.min.js"></script> 
         
@@ -30,7 +26,6 @@
             <div id="header-outer">
                 <header class="section clearfix">
                     
-                    <h1 class="logo"><a href="#home"><img src="images/logo.png" alt="dianalogo" width="250"></a></h1>
                     
                     <h1 name="home" class="logo-small"><img src="images/logo.png" alt="dianalogo" width="126"></h1>
                     
@@ -39,17 +34,19 @@
                             <li class="home"><a class="home" href="#home">home</a></li>
                             <li><a class="about" href="#about">WORK</a></li>
                             <li><a class="classes" href="#classes">ABOUT</a></li>
+                            <li><a class="logo"vhref="#home"><img src="images/logo.png" alt="dianalogo" width="126"></a></li>
                             <li><a class="services" href="#services">CONTACT</a></li>
                             <li><a class="contact" href="#contact">MEDIA</a></li>
                         </ul>
                     </nav> 
                 </header>
           </div>  
-                    <div class="mainContent wrapper clearfix" id="about"> 
+          <div class="mainContent-outer clearfix:after"> 
+                    <div class="mainContent wrapper clearfix" id="home"> 
                         
                         <!-- WORK -->
                         <article>
-                             <div class="section sectionWrapper" >
+                             <div class="section sectionWrapper" id="about" >
         </div>
                             <main class="flex-center">
                                
@@ -63,10 +60,9 @@
                         
                             </main>
                             
-                            <hr class="hr">
                             
                             <div style="clear:both;"></div>   
-<div id="portfolio">
+<div id="portfolio" >
   <div class="tile scale-anm web all unit unit-xs-1 unit-s-1 ">
         <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/2-mon_1092-300x234.jpg" alt="" />
   </div>
@@ -122,18 +118,15 @@
 
 <div style="clear:both;"></div>
                             
-                        <div class="section sectionWrapper" id="about">
-        </div>
                         </article>
                          
                         
-                        <div id="servicesWrapper">
-                            
-                            <section class="section" id="classes"> </section>
-                                                            </div>
+                       <div id="classesWrapper">
+      <section class="section" id="classes">
 
-                        
-                        <!-- END WORK -->
+      </section>
+    </div>
+                                 <!-- END WORK -->
                         
                         <div id="servicesWrapper">
       <section class="section" id="services"> </section>
@@ -142,10 +135,11 @@
       <section class="section" id="contact"> </section>
           </div>
                     
-                    </div> <!-- main -->
+                
             </div> <!-- main-container -->
 
         </div> <!-- outer wrapper -->
+        </div>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toggles/2.0.4/toggles.min.js"></script>
