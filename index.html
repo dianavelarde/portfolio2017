@@ -46,14 +46,14 @@
                     <div class="mainContent wrapper clearfix" id="home"> 
                         
                         <!-- WORK -->
-                        <article>
+                        <article class="article">
                              <div class="section sectionWrapper" id="about" >
         </div>
                             <main class="flex-center" id="top">
                                
                                 
                             <div class="toolbar mb2 mt2">
-  <button class="btn blue fil-cat" href="" data-rel="all">ALL</button>
+  <button class="btn bblue fil-cat" href="" data-rel="all">ALL</button>
   <button class="btn cyan fil-cat" data-rel="web">UX/UI</button>
   <button class="btn pink fil-cat" data-rel="flyers">BRANDING</button>
   <button class="btn yellow fil-cat" data-rel="bcards">EDITORIAL</button>
@@ -64,14 +64,17 @@
                             
                             <div style="clear:both;"></div>   
 <div id="portfolio" >
-  <div class="tile scale-anm web all unit unit-xs-1 unit-s-1 ">
+  <div class="photo-grid tile scale-anm web all unit unit-xs-1 unit-s-1 ">
+      <figure>
         <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/2-mon_1092-300x234.jpg" alt="" />
+          <figcaption class="gutter pad-top"><h3>D A S</h3><p>Broadcast Package</p></figcaption></figure>
   </div>
-  <div class="tile scale-anm bcards all unit unit-xs-1 unit-s-1 ">
-    <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg" alt="" />
+  <div class=" tile scale-anm bcards all unit unit-xs-1 unit-s-1 ">
+      <figure class="photo-grid ">
+    <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg" alt="" /><figcaption class="gutter pad-top"><h3>D A S</h3><p>Broadcast Package</p></figcaption></figure>
   </div>
   <div class="tile scale-anm web all unit unit-xs-1 unit-s-1">
-    <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg" alt="" />
+    <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg" alt="" /><figcaption class="gutter pad-top"><h3>D A S</h3><p>Broadcast Package</p></figcaption>
   </div>
   <div class="tile scale-anm web all unit unit-xs-1 unit-s-1">
             <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/codystretch-300x270.jpg" alt="" />
@@ -128,9 +131,44 @@
               <hr class="hrabout" width="30%">
               <div class= "aboutp unit unit-xs-1 unit-s-1 unit-m-2-3 unit-l-2-3 unit-xl-2-3" >
               <p class="pabout ">
-                  HOLA, MI NOMBRE ES <strong>DIANA.</strong> DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS NOSM ZZRIL DELENIT AUGU.  MINIM VENIAM, QUIS NOSM ZZRIL DELENIT AUGU. <strong class="blue">LEARN MORE.</strong>
+                  HOLA, MI NOMBRE ES <strong>DIANA.</strong> DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS NOSM ZZRIL DELENIT AUGU.  MINIM VENIAM, QUISZAUGU. <strong id="accordion"><input type="checkbox" id="check-1 container accordion" /><label for="check-1" class="blue"> LEARN MORE</label></strong>
+                  
               </p>
-              <img class="dr" src="images/dr.png" alt="" />
+
+		<section id="accordion">
+			<div>
+				<input type="checkbox" id="check-1" />
+				<label for="check-1" class="blue"></label>
+				<article class="table">
+                    <table>
+    <tbody>
+      <tr class="scell">
+        <td data-label="First Name" class="blue"><strong>BORN & RAISED:</strong></td>
+        <td data-label="Last Name" >LIMA, PERU</td>
+      </tr>
+      <tr>
+        <td data-label="First Name" class="blue"><strong>LANGUAGES:</strong></td>
+        <td data-label="Last Name">ENGLISH, SPANISH, BIT OF FRENCH</td>
+      </tr>
+      <tr>
+        <td data-label="First Name" class="blue"><strong>HIDDEN TALENTS:</strong></td>
+        <td data-label="Last Name">COOKING (but don't tell anyone at the office)</td>
+      </tr>
+      <tr>
+        <td data-label="First Name" class="blue"><strong>MUSIC:</strong></td>
+        <td data-label="Last Name">ANYTHING THAT WILL GET MY HEAD BOBBING</td>
+      </tr>
+        
+        <tr>
+        <td data-label="First Name" class="blue"><strong>EDUCATION:</strong></td>
+        <td data-label="Last Name">ALGONQUIN COLLEGE</td>
+      </tr>
+    </tbody>
+</table>
+				</article>
+			</div>
+    </section>
+                  <a href="images/about.png" download><img class="dr" src="images/dr.png" alt="" /></a>
                    </div>
           </section>
     </div>
@@ -165,23 +203,35 @@
           <hr class="hrconnect" width="50%">
           <div class="grid sociallist">
           <ul class="social">
-              <li class="unit unit-xs-1-3 "><img class="" src="images/linkedin.png"  /></li>
-              <li class="unit unit-xs-1-3 "><img class="" src="images/behance.png" /></li>
-              <li class="unit unit-xs-1-3 "><img class="" src="images/instagram.png" /></li>
-              <li class="unit unit-xs-1-3 "><img class="" src="images/pinterest.png" /></li>
-              <li class="unit unit-xs-1-3 "><img class="" src="images/medium.png" /></li>
-              <li class="unit unit-xs-1-3 "><img class="" src="images/google.png" /></li>
-              <li class="unit unit-xs-1-3 "><img class="" src="images/youtube.png"  /></li>
-              <li class="unit unit-xs-1-3 "><img class="" src="images/facebook.png"  /></li>
-              <li class="unit unit-xs-1-3 "><img class="" src="images/snapchat.png"  /></li>
+              <li class="unit unit-xs-1-3"><img class="media" src="images/linkedin.png"  /></li>
+              <li class="unit unit-xs-1-3"><img class="media" src="images/behance.png" /></li>
+              <li class="unit unit-xs-1-3"><img class="media" src="images/instagram.png" /></li>
+              <li class="unit unit-xs-1-3"><img class="media" src="images/pinterest.png" /></li>
+              <li class="unit unit-xs-1-3"><img class="media" src="images/medium.png" /></li>
+              <li class="unit unit-xs-1-3"><img class="media" src="images/google.png" /></li>
+              <li class="unit unit-xs-1-3"><img class="media" src="images/youtube.png"  /></li>
+              <li class="unit unit-xs-1-3"><img class="media" src="images/facebook.png"  /></li>
+              <li class="unit unit-xs-1-3"><img class="media" src="images/snapchat.png"  /></li>
         </ul>
+          </div>
+          
+          <div class=" icons2">
+              <img class="line media" src="images/linkedin.png"/>
+              <img class="line media" src="images/behance.png"/>
+              <img class="line media" src="images/instagram.png"/>
+              <img class="line media" src="images/pinterest.png"/>
+              <img class="line media" src="images/medium.png"/>
+              <img class="line media" src="images/google.png"/>
+              <img class="line media" src="images/youtube.png"/>
+              <img class="line media" src="images/facebook.png"/>
+              <img class="line media" src="images/snapchat.png"/>
           </div>
               </section>
                         </div>
                         
                         <div class=" footer">
                             <a href="#top" class="up"> 
-                                <img  src="images/up.png"  alt="upbutton" /> </a>
+                                <img class="media"  src="images/up.png"  alt="upbutton" /> </a>
                             <p class="uptext ">rain drop...drop top....I know you trynna go back to the top top</p>
                          </div>
                         
