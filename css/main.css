@@ -246,68 +246,6 @@ main .yellow:hover, main .yellow:active, main .yellow:focus{
   padding: 0;
 }
 
-.photo-grid {
-text-align: left;
-}
-
-
-.photo-grid figure {
-	overflow: hidden;
-	position: relative;
-}
-
-
-.photo-grid img {
-	-webkit-transition: all 300ms;
-	-moz-transition: all 300ms;
-	transition: all 300ms;
-}
-
-.photo-grid:hover img {
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	transform: scale(1.1);
-}
-
-.photo-grid figcaption h3 {
-    font-size: 1.8em;
-    font-family: 'Fira Sans', sans-serif;
-	-webkit-transition: all 250ms ease-out;
-	-moz-transition: all 250ms ease-out;
-	transition: all 250ms ease-out;
-	vertical-align: middle;
-}
-
-
-.photo-grid :hover figcaption h3 {
-	-moz-transform: translateY(10px);
-	-webkit-transform: translateY(10px);
-	transform: translateY(10px);
-}
-
-
-.photo-grid figcaption {
-	background: rgba(0,0,0,0.5);
-	color: white;
-	opacity: 0;
-	left: 0;
-    width: 200px;
-    height: 200px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	-webkit-transition: all 300ms;
-	-moz-transition: all 300ms;
-	transition: all 300ms;
-	-webkit-transition-delay: 100ms;
-	-moz-transition-delay: 100ms;
-	transition-delay: 100ms;
-    z-index: 50;
-}
-
-figcaption{
-    display: block;
-}
 
 /* ==========================================================================
    About
@@ -583,6 +521,80 @@ p.crt {
     letter-spacing: 1px;
 }
 
+/* ==========================================================================
+   Project
+   ========================================================================== */
+
+h5.project{
+    text-align: center;
+    color: blue;
+    font-size: 16px;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+p.projectd{
+    
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+ 
+}
+
+hr.hrproject{
+    border: 0;
+    border-top: 3pt solid #cccccc;
+    border-bottom: 1px solid #f6f6f6;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
+    margin-bottom: 1.5rem;
+}
+
+a.next {
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+ 
+}
+
+a.next:hover {
+    color: gray;
+    cursor: pointer;
+ 
+}
+
+ul.nextb {
+    margin-bottom: 1rem;
+}
+img.nicon {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+    margin-bottom: 10px;
+}
+
+img.nicon:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */  
+    cursor: pointer;
+}
+
+ .projectbox {
+     padding-bottom: 0.3rem;
+     margin-bottom: 0;
+     display: block;
+}
+
+ .projectbox2 {
+     display: none;
+}
+
 
 /* ==========================================================================
    Media Queries
@@ -696,7 +708,8 @@ p.crt {
     transition: all 350ms ease;
 
 }
-    .tile:hover { 
+    .tile:hover img { 
+         -webkit-filter: grayscale(100%);
     }
     
     .scale-anm {
@@ -825,6 +838,95 @@ p.crt {
         flex: none;
      margin-left: 1rem;
     }
+    
+     .projectbox {
+     display: none;
+}
+    
+    
+    .projectbox2 {
+    display: block;
+    float: right;
+    padding-top: 0;
+        position: fixed;
+}
+    
+    h5.project2{
+    text-align:left;
+    color: blue;
+    font-size: 16px;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    
+}
+
+p.projectd2{
+    
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    text-align: left;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+ 
+}
+
+hr.hrproject2{
+    border: 0;
+    border-top: 2pt solid #cccccc;
+    border-bottom: 1px solid #f6f6f6;
+    display: block;
+    margin-left: 0;
+    padding-bottom: 0;
+    margin-bottom: 1.5rem;
+}
+
+a.next2 {
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 30px;
+    margin-top: 3rem;
+    padding-top: 3rem;
+ 
+}
+
+
+a.next2:hover {
+    color: gray;
+    cursor: pointer;
+ 
+}
+
+ul.nextb2 {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+    li.leftli {
+        text-align: left;
+        
+    }
+    
+img.nicon2 {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+    margin-bottom: 10px;
+}
+
+img.nicon2:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */  
+    cursor: pointer;
+}
+    
+    img.imgsz {
+   resize: both;
+  width:100%;
+  height:100%;
+}
+
 }
 
 @media only screen and (min-width: 708px) {
@@ -875,7 +977,13 @@ p.crt {
         table {
     font-size: 15px; 
 }
-         
+     a.next2 {
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 35px;
+ 
+}
+    
 }
 
 @media only screen and (min-width: 886px) {
@@ -915,6 +1023,13 @@ p.crt {
     h4.hf{
         font-size: 40px;
     }
+    
+        a.next2 {
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 35px;
+ 
+}
     
 }
 
@@ -1080,9 +1195,28 @@ p.crt {
     article {
         margin-top: 5rem;
     }
-
+    
+     a.next2 {
+    letter-spacing: 4px;
+    text-align: left;
+    font-size: 40px;
+     line-height: 45px; 
+ 
+}
+    
+    .projectbox2 {
+        display: block;
+        float: right;
+        padding-top: 1rem;
+        padding-right: 0.5rem;
+}
 }
 
+@media only screen and (min-width: 960px) {
+        .projectbox2 {
+        padding-right: 2rem;
+}
+}
 
 @media only screen and (min-width: 996px) { /*******   min 1024px   *******/
     
@@ -1130,6 +1264,26 @@ p.crt {
        img.line {
         margin-right: 0.5rem;
     }
+        h5.project2{
+    font-size: 22px;
+    letter-spacing: 2px;
+    
+}
+
+p.projectd2{
+    
+    font-size: 17px;
+    letter-spacing: 2px;
+    line-height: 27px;
+    text-align: left;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+ 
+}
+    
+        .projectbox2 {
+        padding-right: 2rem;
+}
 }
 
 
@@ -1220,6 +1374,10 @@ p.crt {
     line-height: 40px;
 }
     
+    .projectbox2 {
+        padding-right: 3rem;
+}
+    
 }
 
 @media only screen and (min-width: 1595px) { 
@@ -1252,6 +1410,10 @@ p.crt {
        height: 80px;
         margin-right: 2rem;
     }
+    
+        .projectbox2 {
+        padding-right: 4rem;
+}
 
 }
 
