@@ -537,7 +537,7 @@ h5.project{
 p.projectd{
     
     font-size: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     line-height: 22px;
     text-align: center;
     margin-bottom: 1rem;
@@ -595,6 +595,24 @@ img.nicon:hover {
      display: none;
 }
 
+.project2{
+    display: none;
+}
+
+.hrproject2{
+    display: none;
+}
+
+.projectd2{
+    display: none;
+}
+
+.next2{
+    display: none;
+}
+img.nicon2{
+    display: none;
+}
 
 /* ==========================================================================
    Media Queries
@@ -848,10 +866,11 @@ img.nicon:hover {
     display: block;
     float: right;
     padding-top: 0;
-        position: fixed;
+    position: fixed;
 }
     
     h5.project2{
+    display: block;
     text-align:left;
     color: blue;
     font-size: 16px;
@@ -862,7 +881,7 @@ img.nicon:hover {
 }
 
 p.projectd2{
-    
+    display: block;
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 22px;
@@ -890,6 +909,7 @@ a.next2 {
     font-size: 30px;
     margin-top: 3rem;
     padding-top: 3rem;
+    display: block;
  
 }
 
@@ -910,6 +930,7 @@ ul.nextb2 {
     }
     
 img.nicon2 {
+    display: block;
     opacity: 1.0;
     filter: alpha(opacity=100); /* For IE8 and earlier */
     margin-bottom: 10px;
@@ -1273,8 +1294,8 @@ img.nicon2:hover {
 p.projectd2{
     
     font-size: 17px;
-    letter-spacing: 2px;
-    line-height: 27px;
+    letter-spacing: 1.6px;
+    line-height: 27.5px;
     text-align: left;
     margin-bottom: 3rem;
     margin-right: 1rem;
