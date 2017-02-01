@@ -616,6 +616,27 @@ img.nicon2{
 }
 
 /* ==========================================================================
+  Food for life report
+   ========================================================================== */
+a.copy {
+    display: block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: blue;
+    font-weight: 500;
+}
+
+a.copy:hover{
+    color: gray;
+    text-decoration: underline;
+}
+
+a.copy2 {
+    display: none;
+}
+
+/* ==========================================================================
    Media Queries
    ========================================================================== */
 
@@ -948,7 +969,27 @@ img.nicon2:hover {
   width:100%;
   height:100%;
 }
+    
+    a.copy {
+     display: none;
+}
 
+a.copy2 {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 25px;
+    color: blue;
+    font-weight: 500;
+    display: block;
+    text-align: left;
+    padding-bottom: 0;
+    margin-bottom: -4rem;
+}
+
+    a.copy2:hover{
+    color: gray;
+    text-decoration: underline;
+}
 }
 
 @media only screen and (min-width: 708px) {
