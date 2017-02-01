@@ -965,14 +965,14 @@ img.nicon2:hover {
 }
     
     img.imgsz {
-   resize: both;
-  width:100%;
-  height:100%;
-}
+        resize: both;
+        width:100%;
+        height:100%;
+    }
     
     a.copy {
      display: none;
-}
+    }
 
 a.copy2 {
     text-decoration: none;
