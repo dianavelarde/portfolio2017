@@ -18,7 +18,6 @@ html,
 input,
 select,
 textarea {
-    color:black;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -314,10 +313,8 @@ p.pabout {
 }
 
 #accordion input:checked + label {
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-	color: blue;
     margin-bottom: 0;
+    outline: none !important;
 }
 #accordion article {
 	background:#f6f6f6;
@@ -330,13 +327,16 @@ p.pabout {
    padding: 0.2cm;
 }
 #accordion input:checked article {
+    outline: none !important;
 }
 #accordion input:checked ~ article {
-	border-bottom-left-radius: .25em;
-	border-bottom-right-radius: .25em;
 	height: auto;
+    outline: none !important;
 }
 
+input:focus input:hover{
+    outline:none;
+}
 
 .table{
      display: flex;
