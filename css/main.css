@@ -732,8 +732,8 @@ a.copy2 {
           
     #portfolio {  
     margin: 1rem 0;
-    -webkit-column-count: 3; 
-    -moz-column-count: 3;
+    -webkit-column-count: 5; 
+    -moz-column-count: 5;
     column-count: 5;
     -webkit-column-gap: 1rem;
     -moz-column-gap: 1rem;
