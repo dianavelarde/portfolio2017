@@ -203,8 +203,10 @@ div .btn {
 
 
 .flex-center {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: right;
+    float: right;
+    margin-right: 2em;
 }
 
 main .bblue:hover, main .bblue:active, main .bblue:focus{
